@@ -12,8 +12,8 @@ public class UniqueChars {
 
 		//Testing each character in the string against all characters that follow.
 		for(int i = 0; i < str.length(); i++) {
-			for(int j = i; j < str.length(); j++) {
-				if( str.chatAt(i) == str.charAt(j) )
+			for(int j = i+1; j < str.length(); j++) {
+				if( str.charAt(i) == str.charAt(j) )
 					return false;
 			}
 		}
